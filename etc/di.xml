@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Thinkbeat_SmartCustomerGrid Dependency Injection Configuration
+ *
+ * @category  Thinkbeat
+ * @package   Thinkbeat_SmartCustomerGrid
+ * @author    Thinkbeat
+ * @copyright Copyright (c) 2026 Thinkbeat
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    
+    <!-- Plugin to enhance customer grid collection with optimized joins -->
+    <type name="Magento\Customer\Model\ResourceModel\Grid\Collection">
+        <plugin name="thinkbeat_smart_customer_grid_collection"
+                type="Thinkbeat\SmartCustomerGrid\Plugin\Customer\Model\ResourceModel\Grid\Collection"
+                sortOrder="10"/>
+        <plugin name="thinkbeat_smart_customer_grid_add_guests"
+                type="Thinkbeat\SmartCustomerGrid\Plugin\AddGuestCustomersToGrid"
+                sortOrder="100"/>
+    </type>
+
+</config>
