@@ -22,4 +22,11 @@
                 sortOrder="100"/>
     </type>
 
+    <!-- Plugin to remove Edit action for Guest customers -->
+    <type name="Magento\Customer\Ui\Component\Listing\Column\Actions">
+        <plugin name="thinkbeat_smart_customer_grid_disable_guest_actions"
+                type="Thinkbeat\SmartCustomerGrid\Plugin\Ui\Component\Listing\Column\DisableGuestActions"
+                sortOrder="10"/>
+    </type>
+
 </config>

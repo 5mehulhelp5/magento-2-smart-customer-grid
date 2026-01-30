@@ -17,40 +17,36 @@
     <columns name="customer_columns">
         
         <!-- Total Orders Count Column -->
-        <column name="total_orders" class="Magento\Ui\Component\Listing\Columns\Column">
+        <column name="total_orders" class="Magento\Ui\Component\Listing\Columns\Column" sortOrder="100">
             <settings>
                 <label translate="true">Total Orders</label>
                 <filter>number</filter>
                 <dataType>number</dataType>
-                <sortOrder>100</sortOrder>
                 <visible>true</visible>
             </settings>
         </column>
 
         <!-- Lifetime Value Column -->
-        <column name="lifetime_value" class="Thinkbeat\SmartCustomerGrid\Ui\Component\Listing\Column\LifetimeValue">
+        <column name="lifetime_value" class="Thinkbeat\SmartCustomerGrid\Ui\Component\Listing\Column\LifetimeValue" sortOrder="110">
             <settings>
                 <label translate="true">Lifetime Value</label>
                 <filter>textRange</filter>
                 <dataType>text</dataType>
-                <sortOrder>110</sortOrder>
                 <visible>true</visible>
             </settings>
         </column>
 
         <!-- Last Order Date Column -->
-        <column name="last_order_date" class="Magento\Ui\Component\Listing\Columns\Date" component="Magento_Ui/js/grid/columns/date">
+        <column name="last_order_date" class="Magento\Ui\Component\Listing\Columns\Date" component="Magento_Ui/js/grid/columns/date" sortOrder="120">
             <settings>
                 <label translate="true">Last Order Date</label>
                 <filter>dateRange</filter>
                 <dataType>date</dataType>
-                <sortOrder>120</sortOrder>
                 <visible>true</visible>
                 <timezone>false</timezone>
                 <dateFormat>MMM d, y</dateFormat>
                 <resizeEnabled>true</resizeEnabled>
                 <resizeDefaultWidth>150</resizeDefaultWidth>
-                <width>300</width>
                 <headerTmpl>ui/grid/columns/text</headerTmpl>
                 <fieldClass>
                     <class name="customers-last-order-column">true</class>
@@ -59,17 +55,15 @@
         </column>
 
         <!-- Last Purchased Items Column -->
-        <column name="last_purchased_items" class="Thinkbeat\SmartCustomerGrid\Ui\Component\Listing\Column\LastPurchasedItems">
+        <column name="last_purchased_items" class="Thinkbeat\SmartCustomerGrid\Ui\Component\Listing\Column\LastPurchasedItems" sortOrder="130">
             <settings>
                 <label translate="true">Last Purchased Items</label>
                 <filter>false</filter>
                 <sortable>false</sortable>
-                <sortOrder>130</sortOrder>
                 <visible>true</visible>
                 <bodyTmpl>ui/grid/cells/html</bodyTmpl>
                 <resizeEnabled>true</resizeEnabled>
                 <resizeDefaultWidth>400</resizeDefaultWidth>
-                <width>300</width>
                 <headerTmpl>ui/grid/columns/text</headerTmpl>
                 <fieldClass>
                     <class name="customers-items-column">true</class>
@@ -78,12 +72,11 @@
         </column>
 
         <!-- Customer Type Column -->
-        <column name="customer_type" class="Thinkbeat\SmartCustomerGrid\Ui\Component\Listing\Column\CustomerType">
+        <column name="customer_type" class="Thinkbeat\SmartCustomerGrid\Ui\Component\Listing\Column\CustomerType" sortOrder="150">
             <settings>
                 <label translate="true">Customer Type</label>
                 <filter>select</filter>
                 <dataType>select</dataType>
-                <sortOrder>150</sortOrder>
                 <visible>true</visible>
                 <bodyTmpl>ui/grid/cells/html</bodyTmpl>
                 <options class="Thinkbeat\SmartCustomerGrid\Model\Source\CustomerType"/>
@@ -91,12 +84,11 @@
         </column>
 
         <!-- Email Domain Column -->
-        <column name="email_domain" class="Magento\Ui\Component\Listing\Columns\Column">
+        <column name="email_domain" class="Magento\Ui\Component\Listing\Columns\Column" sortOrder="160">
             <settings>
                 <label translate="true">Email Domain</label>
                 <filter>text</filter>
                 <dataType>text</dataType>
-                <sortOrder>160</sortOrder>
                 <visible>false</visible>
             </settings>
         </column>
