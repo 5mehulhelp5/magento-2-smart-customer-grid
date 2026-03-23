@@ -331,3 +331,15 @@ Copyright (c) 2026 Thinkbeat. All rights reserved.
 - Optimized SQL performance
 - Full filtering support
 - Zero configuration required
+
+---
+
+## 📸 Screenshots
+
+Here is the Smart Customer Grid in action:
+
+<div align="center">
+  <img src="Screenshots/001.jpg" alt="Screenshot 1" width="48%">
+  <img src="Screenshots/002.jpg" alt="Screenshot 2" width="48%">
+</div>
+
